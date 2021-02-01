@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "Comply";
+    Layout = "~/Views/Shared/_Student.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Library
+            </div>
+            <div class="panel-body">
+                <h1>
+                    @Session["Library"].ToString()
+                </h1>
+
+                <h3>
+                    @Session["L_inf"].ToString()
+                </h3>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.Health panel -->
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Health
+            </div>
+            <div class="panel-body">
+                <h1>
+                    @Session["Health"].ToString()
+                </h1>
+
+                <h3>
+                    @Session["H_inf"].ToString()
+                </h3>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                OSAS
+            </div>
+            <div class="panel-body">
+                <h1>
+                    @Session["Osas"].ToString()
+                </h1>
+
+                <h3>
+                    @Session["O_inf"].ToString()
+                </h3>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.Health panel -->
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Registrar
+            </div>
+            <div class="panel-body">
+                <h1>
+                    @Session["Registrar"].ToString()
+                </h1>
+
+                <h3>
+                    @Session["R_inf"].ToString()
+                </h3>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+</div>
